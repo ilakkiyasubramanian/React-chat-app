@@ -1,0 +1,155 @@
+#root {
+  width: 100%;
+  background: linear-gradient(135deg, #B60064, #5A0086);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #B60064, #5A0086);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh; /* Ensure it fills at least the full viewport */
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  padding: 1rem;
+}
+
+.chat-message {
+  background-color: #ffffff;
+  padding: 1em;
+  max-height: 450px;
+  overflow-y: auto;
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.message-container::-webkit-scrollbar {
+  width: 8px; /* Customize the scrollbar width */
+}
+.message-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #B60064, #5A0086); /* Match chat theme */
+  border-radius: 5px;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: #F2F2F2;
+  border-radius: 5px;
+}
+
+.message-right {
+  background: linear-gradient(135deg, #B60064, #5A0086);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  text-align: right;
+  align-self: flex-end;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-left {
+  display: flex;
+  background: linear-gradient(135deg, #B60064, #5A0086);
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  text-align: left;
+  align-self: flex-start;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.message-text {
+  font-size: 17px;
+  padding: 8px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.message-name {
+  font-size: 13px;
+  color: #B60064;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+
+
+
+
+.chat-title {
+  color: #FFB400; /* Gold */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+  font-size: 2rem; /* Large size */
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #8800C7, #E00074);
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  padding: 0.3rem 1rem; /* Smaller padding */
+  font-weight: bold;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Balanced soft shadow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #7700B0, #C50066);
+  transform: scale(1.05); /* Slight grow on hover */
+}
+.message-container {
+  height: 380px; /* Allocate space for messages */
+  overflow-y: auto; 
+  padding-right: 10px; /* Add padding to prevent text overlap with scrollbar */
+  margin-right: 5px;/* Scroll only messages */
+}
+
+.message-input {
+  display: flex;
+  position: sticky; /* Sticks the input field at the bottom */
+  bottom: 0;
+  background: #ffffff; /* Matches chat-message background */
+  padding-top: 10px; /* Space above input area */
+}
+
